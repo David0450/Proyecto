@@ -1,0 +1,53 @@
+body {
+    background-color: #9db4ab;
+    overflow: hidden;
+}
+
+#modalLogin {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#contenidoModal {
+    text-align: center;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 25px;
+    width: 35%;
+    height: 60%;
+    padding: 25px 0 25px 0;
+}
+
+.login-form {
+    height: 100%;
+    padding-top: 50px;
+}
+
+.login-form input {
+    width: 75%;
+    height: 35px;
+    font-size: 15pt;
+    border: none;
+    margin: 20px 0 20px 0;
+    padding: 5px;
+}
+
+.login-form input::placeholder {
+    font-family: sans-serif, FontAwesome;
+}
+
+.login-form input:not(.submit) {
+    background-color: #bcbcbc;
+}
+
+.login-form .submit {
+    background-color: #D0E3C4;
+    border-radius: 15px;
+}

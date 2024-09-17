@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body,main {
+    height: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    padding: 5px;
+    background-color: #ADC698;
+}
+
+main {
+    background-color: #E2E8CE;
+    padding: 10px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+i:not(.actions) {
+    font-size: 48px;
+    width: 100%;
+}
+
+i.actions {
+    font-size: 21px;
+}
+
+form.actions {
+    width: fit-content;
+    text-align: center;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+button.actionButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+button.dt-button {
+    height: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 5px;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+div.dt-buttons {
+    display: flex;
+}
+
+button.dt-button:last-of-type {
+    margin-left: auto;
+}
+
+button.dt-button i{
+    font-size: 28pt;
+}
+
+button:hover:active, a:hover:active{
+    background-color: #503047;
+    color: white
+}
+
+i:active {
+    color: white
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.dt-paging-button:hover {
+    background-color: #503047;
+}
+
+.dt-input {
+    background-color: #fff;
+}
+
+button.disabled {
+    display: none;
+}
+
+th {
+    height: 45px;
+    background-color: #503047;
+    color: white;
+}
+
+thead tr th:first-child {
+    border-top-left-radius: 15px;
+    overflow: hidden;
+}
+
+td:first-child{
+    font-weight: bold;
+}
+
+thead tr th:last-child {
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+
+tfoot tr th:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+tfoot tr th:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+td {
+    height: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+input.insertarBoton {
+    background-color:#D0E3C4;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    display: inline-block;
+    color: black;
+}
+
+a.websites {
+    background-color: #D0E3C4;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    height: 65px;
+    width: 65px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+a.active {
+    color: white;
+    background-color: #503047;
+}
+
+td button{
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    margin: 0 10px; 
+    display: inline;
+}
+
+header h1 {
+    margin: 10px;
+    position: absolute;
+    font-size: 40pt;
+}

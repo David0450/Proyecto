@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Borrar usuario - Mi base de datos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    <script src="https://kit.fontawesome.com/aaeebdae3e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Mi base de datos</h1>
+        <nav>
+            <ul>
+                <li><a href="añadir-usuario.php" class="websites"><i class="fa-solid fa-user-plus"></i>Añadir</a></li>
+                <li><a href="buscar-usuario.html" class="websites"><i class="fa-solid fa-search"></i>Buscar</a></li>
+                <li><a href="borrar-usuario.php" class="active websites"><i class="fa-solid fa-trash"></i>Eliminar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <?php
+            include "../scripts/php/funciones.php";
+        ?>
+        <form action="#" method="post">
+            <label for="dni">DNI/CIF: </label>
+            <input type="text" maxlength="9" minlength="9" name="dni" value="<?php echo $_GET["dni"]?? ""?>"><br>
+            <input type="submit" name="delete" value="Eliminar">
+        </form>
+        <?php
+            if(isset($_POST["delete"])) {
+                $DBFunctions = new Administrador();
+                if ($DBFunctions->checkUsuario($_POST["dni"]) != null) {
+                    $nombreCompleto = $DBFunctions->checkUsuario($_POST["dni"])["nombre"]." ".$DBFunctions->checkUsuario($_POST["dni"])["primerApellido"];
+                    $confirmacion = $DBFunctions->borrarUsuario($_POST["dni"]);
+                    if ($confirmacion === false) {
+                        echo "No se ha podido eliminar al usuario";
+                    } else {
+                        echo "El usuario '".$nombreCompleto."' ha sido eliminado.";
+                    }
+                } else {
+                    echo "Ese usuario no existe";
+                }
+            }
+        ?>
+    </main>
+    <footer></footer>
+</body>
+</html>

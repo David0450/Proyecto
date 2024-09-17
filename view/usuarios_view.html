@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar usuario - Mi base de datos</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../css/style.css'>
+    <link rel="stylesheet" href="../css/datatableStyle.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/aaeebdae3e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/dataTables.buttons.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.dataTables.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="../obtenerUsuarios.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js "></script>
+</head>
+<body>
+    <header>
+        <h1>Mi base de datos</h1>
+        <nav>
+            <ul>
+                <!--<li><a href="añadir-usuario.phtml" class="websites"><i class="fa-solid fa-user-plus"></i>Añadir</a></li>--> 
+                <li><a href="usuarios_view.html" class="active websites"><i class="fa-solid fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table id="miTabla" class="display">
+            <thead>
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Primer apellido</th>
+                    <th>Correo electrónico</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>DNI</th>
+                    <th>Nombre</th>
+                    <th>Primer apellido</th>
+                    <th>Correo electrónico</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
