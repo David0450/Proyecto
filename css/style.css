@@ -16,6 +16,7 @@ body {
 }
 
 header {
+    height: 10vh;
     padding: 5px;
     background-color: #ADC698;
 }
@@ -181,7 +182,7 @@ td button{
 }
 
 header h1 {
-    margin: 10px;
+    margin: 5px;
     position: absolute;
     font-size: 40pt;
 }
