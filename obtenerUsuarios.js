@@ -14,6 +14,7 @@ $(document).ready(function() {
             { data: "telefono" },
             { data: "acciones" }
         ],
+        order: ['',''],
         pageLength: 10,
         language: {url: "../public/lang/espannol.json"},
         layout: {
@@ -38,7 +39,7 @@ $(document).ready(function() {
                     {
                         text: "<i class='fa-solid fa-user-plus'></i>",
                         title: "Añadir usuario",
-                        action: function(){
+                        action: function(e, dt, node, config, cb){
                             botonAñadirUsuario();
                         }
                     }

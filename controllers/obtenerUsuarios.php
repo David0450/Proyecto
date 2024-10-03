@@ -9,6 +9,8 @@ $limit = $_POST['length'];
 $offset = $_POST['start'];
 $search = $_POST['search']['value'];
 $draw = $_POST['draw'];
+$sortingColumn = $_POST['columns'][$_POST['order'][0]['column']?? '']['data'] ?? '';
+$sortingDirection = $_POST['order'][0]['dir'] ?? '';
 
 $query= Usuario::query();
 
@@ -19,7 +21,13 @@ if (!empty($search)) {
           ->orWhere("email","like","%".$search."%")
           ->orWhere("telefono","like","%".$search."%");
 }
+
+if(!empty($sortingDirection)) {
+    $query->orderBy($sortingColumn, $sortingDirection);
+}
+
 $totalFiltered = $query->count();
+
 
 $usuarios = $query->offset($offset)
                     ->limit($limit)

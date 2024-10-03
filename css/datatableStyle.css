@@ -125,7 +125,7 @@ table.dataTable thead > tr > td.dt-orderable-desc {
 table.dataTable thead > tr > th.dt-orderable-asc:hover, table.dataTable thead > tr > th.dt-orderable-desc:hover,
 table.dataTable thead > tr > td.dt-orderable-asc:hover,
 table.dataTable thead > tr > td.dt-orderable-desc:hover {
-  outline: 2px solid #503047;
+  outline: 2px solid #3B6385;
   outline-offset: -2px;
 }
 table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order:before, table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order:after,
@@ -574,13 +574,13 @@ div.dt-container .dt-paging .dt-paging-button {
 div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover {
   color: #fff !important;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: #503047;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #503047), color-stop(100%, #503047)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #50304786 0%, #503047 100%); /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(left right, #50304786 100%, #503047 100%); /* FF3.6+ */
-  background: -ms-linear-gradient(top, #50304786 0%, #503047 100%); /* IE10+ */
-  background: -o-linear-gradient(top, #50304786 0%, #503047 100%); /* Opera 11.10+ */
-  background: linear(to bottom, rgba(230, 230, 230, 0.05) 0%, #503047 100%); /* W3C */
+  background-color: #3B6385;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3B6385), color-stop(100%, #3B6385)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(left right, #3B638586 100%, #3B6385 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* Opera 11.10+ */
+  background: linear(to bottom, rgba(230, 230, 230, 0.05) 0%, #3B6385 100%); /* W3C */
 }
 div.dt-container .dt-paging .dt-paging-button.disabled, div.dt-container .dt-paging .dt-paging-button.disabled:hover, div.dt-container .dt-paging .dt-paging-button.disabled:active {
     visibility: hidden;
@@ -588,23 +588,23 @@ div.dt-container .dt-paging .dt-paging-button.disabled, div.dt-container .dt-pag
 div.dt-container .dt-paging .dt-paging-button:hover {
   color: white !important;
   border: 1px solid #111;
-  background-color: #503047;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #50304786), color-stop(100%, #503047)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #50304786 0%, #503047 100%); /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #50304786 0%, #503047 100%); /* FF3.6+ */
-  background: -ms-linear-gradient(top, #50304786 0%, #503047 100%); /* IE10+ */
-  background: -o-linear-gradient(top, #50304786 0%, #503047 100%); /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #50304786 0%, #503047 100%); /* W3C */
+  background-color: #3B6385;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3B638586), color-stop(100%, #3B6385)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #3B638586 0%, #3B6385 100%); /* W3C */
 }
 div.dt-container .dt-paging .dt-paging-button:active {
   outline: none;
-  background-color: #503047;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #50304786), color-stop(100%, #503047)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #50304786 0%, #503047 100%); /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, #50304786 0%, #503047 100%); /* FF3.6+ */
-  background: -ms-linear-gradient(top, #50304786 0%, #503047 100%); /* IE10+ */
-  background: -o-linear-gradient(top, #50304786 0%, #503047 100%); /* Opera 11.10+ */
-  background: linear-gradient(to bottom, #50304786 0%, #503047 100%); /* W3C */
+  background-color: #3B6385;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3B638586), color-stop(100%, #3B6385)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* Chrome10+,Safari5.1+ */
+  background: -moz-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* FF3.6+ */
+  background: -ms-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* IE10+ */
+  background: -o-linear-gradient(top, #3B638586 0%, #3B6385 100%); /* Opera 11.10+ */
+  background: linear-gradient(to bottom, #3B638586 0%, #3B6385 100%); /* W3C */
   box-shadow: inset 0 0 3px #111;
 }
 div.dt-container .dt-paging .ellipsis {
@@ -711,17 +711,17 @@ html.dark .dt-container .dt-length select {
 }
 html.dark .dt-container .dt-paging .dt-paging-button.current, html.dark .dt-container .dt-paging .dt-paging-button.current:hover {
   border: 1px solid rgb(89, 91, 94);
-  background: #503047;
+  background: #3B6385;
 }
 html.dark .dt-container .dt-paging .dt-paging-button.disabled, html.dark .dt-container .dt-paging .dt-paging-button.disabled:hover, html.dark .dt-container .dt-paging .dt-paging-button.disabled:active {
   color: #666 !important;
 }
 html.dark .dt-container .dt-paging .dt-paging-button:hover {
   border: 1px solid rgb(53, 53, 53);
-  background: #503047;
+  background: #3B6385;
 }
 html.dark .dt-container .dt-paging .dt-paging-button:active {
-  background: #503047;
+  background: #3B6385;
 }
 
 /*

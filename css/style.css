@@ -18,11 +18,11 @@ body {
 header {
     height: 10vh;
     padding: 5px;
-    background-color: #ADC698;
+    background-color: #7DC2FF;
 }
 
 main {
-    background-color: #E2E8CE;
+    background-color: whitesmoke;
     padding: 10px;
 }
 
@@ -76,7 +76,7 @@ button.dt-button i{
 }
 
 button:hover:active, a:hover:active{
-    background-color: #503047;
+    background-color: #3B6385;
     color: white
 }
 
@@ -91,11 +91,11 @@ table {
 
 
 .dt-paging-button:hover {
-    background-color: #503047;
+    background-color: #3B6385;
 }
 
 .dt-input {
-    background-color: #fff;
+    background-color: whitesmoke;
 }
 
 button.disabled {
@@ -104,7 +104,7 @@ button.disabled {
 
 th {
     height: 45px;
-    background-color: #503047;
+    background-color: #3B6385;
     color: white;
 }
 
@@ -137,7 +137,7 @@ td {
 }
 
 input.insertarBoton {
-    background-color:#D0E3C4;
+    background-color:#7DC2FF;
     border: 1px solid;
     border-radius: 4px;
     padding: 3px;
@@ -157,7 +157,7 @@ a {
 }
 
 a.websites {
-    background-color: #D0E3C4;
+    background-color: #7DC2FF;
     text-align: center;
     border: 3px solid black;
     border-radius: 10px;
@@ -170,7 +170,7 @@ a.websites {
 
 a.active {
     color: white;
-    background-color: #503047;
+    background-color: #3B6385;
 }
 
 td button{
