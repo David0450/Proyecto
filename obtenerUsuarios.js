@@ -14,7 +14,7 @@ $(document).ready(function() {
             { data: "telefono" },
             { data: "acciones" }
         ],
-        order: ['',''],
+        order: ['',''], 
         pageLength: 10,
         language: {url: "../public/lang/espannol.json"},
         layout: {
@@ -24,8 +24,14 @@ $(document).ready(function() {
                         text: "<i class='fa-regular fa-file-pdf'></i>",
                         extend: 'pdfHtml5',
                         download: 'open',
+                        orientation: 'landscape',
+                        pageSize: 'A4',
+                        customize: function(doc) {
+                            doc.content[1].table.widths = ['*', '*', '*', '*', '*' ];
+                            doc.defaultStyle.alignment = 'center'
+                        },                        
                         exportOptions: {
-                            columns: [0,1,2,3,4]
+                            columns: [0,1,2,3,4],
                         },
                     },
                     {
@@ -97,7 +103,7 @@ function botonEditarUsuario(dni, nombre, apellido, email, telefono, nombreComple
             }).then((result) => {
                 if (result.isConfirmed) {
                     jQuery.ajax({
-                        type: "GET",
+                        type: "POST",
                         url: "../controllers/editarUsuarios.php",
                         dataType: "json",
                         data: { 
@@ -151,7 +157,7 @@ function botonBorrarUsuario(dni, nombreCompleto) {
     }).then((result) => {
         if (result.isConfirmed) {
             jQuery.ajax({
-                type: "GET",
+                type: "POST",
                 url: "../controllers/borrarUsuarios.php",
                 dataType: "json",
                 data: { dni: dni}
@@ -161,7 +167,9 @@ function botonBorrarUsuario(dni, nombreCompleto) {
                 text: "Has eliminado a "+nombreCompleto+" ("+dni+")",
                 icon: "success"
             });
-            $("#miTabla").DataTable().ajax.reload(null, false);
+            $("#miTabla").DataTable().rows().invalidate();
+            $("#miTabla").DataTable().draw();
+            //$("#miTabla").DataTable().ajax.reload(null, false);
         } else if (result.dismiss === Swal.DismissReason.cancel) {
             borrarAlert.fire({
                 title: "Cancelado",

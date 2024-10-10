@@ -5,11 +5,11 @@ require "../models/Usuario.php";
 
 use App\Models\Usuario;
 
-$dni = $_GET["dni"];
-$nombre = $_GET["nombre"];
-$apellido = $_GET["apellido"];
-$email = $_GET["email"];
-$telefono = $_GET["telefono"];
+$dni = $_POST["dni"];
+$nombre = $_POST["nombre"];
+$apellido = $_POST["apellido"];
+$email = $_POST["email"];
+$telefono = $_POST["telefono"];
 
 $usuario = Usuario::find($dni);
 
