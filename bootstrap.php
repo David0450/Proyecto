@@ -8,10 +8,10 @@ $capsule = new Capsule;
 
 $capsule->addConnection([
     'driver'    => 'mysql',
-    'host'      => '127.0.0.1',
-    'database'  => 'bcs_bd',
-    'username'  => 'root',
-    'password'  => '',
+    'host'      => 'localhost',
+    'database'  => 'cifpceuta_dperal',
+    'username'  => 'dperal450',
+    'password'  => '2-Daw!450',
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',

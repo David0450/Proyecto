@@ -1,5 +1,14 @@
 <?php
 
+/* $viewPath = __DIR__ . '/../view/index.html';
+
+if (file_exists($viewPath)) {
+    readfile($viewPath); 
+} else {
+    http_response_code(404);
+    echo "View not found!";
+} */
+
 require "../bootstrap.php";
 require "../models/Usuario.php";
 
